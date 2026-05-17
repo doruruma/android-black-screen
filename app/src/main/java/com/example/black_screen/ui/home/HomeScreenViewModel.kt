@@ -1,4 +1,4 @@
-package com.example.black_screen.ui.home
+package com.doruruma.black_screen.ui.home
 
 import android.app.Application
 import android.content.Context
@@ -8,7 +8,7 @@ import android.provider.Settings
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.black_screen.service.BlackScreenService
+import com.doruruma.black_screen.service.BlackScreenService
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

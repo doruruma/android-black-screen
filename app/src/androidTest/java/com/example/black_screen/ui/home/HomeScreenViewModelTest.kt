@@ -1,8 +1,8 @@
-package com.example.black_screen.ui.home
+package com.doruruma.black_screen.ui.home
 
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.example.black_screen.service.BlackScreenService
+import com.doruruma.black_screen.service.BlackScreenService
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 import org.junit.Assert.assertEquals

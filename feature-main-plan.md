@@ -45,7 +45,7 @@ graph TD
 
 ### Foreground Service Lifecycle
 
-*   **Service Name**: `com.example.black_screen.service.BlackScreenService`
+*   **Service Name**: `com.doruruma.black_screen.service.BlackScreenService`
 *   **Service Type**: `specialUse` (with manifest tag `<property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Black screen overlay utility to save battery and block distractions"/>`) or standard FGS permissions.
 *   **State Tracking**: Use a simple binder or standard Kotlin `StateFlow` inside a companion object (or shared preference) to expose the running state of the service to the UI (`isServiceRunning: Flow<Boolean>`).
 

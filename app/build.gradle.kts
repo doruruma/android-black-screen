@@ -5,10 +5,10 @@ plugins {
 }
 
 android {
-    namespace = "com.example.black_screen"
+    namespace = "com.doruruma.black_screen"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.example.black_screen"
+        applicationId = "com.doruruma.black_screen"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

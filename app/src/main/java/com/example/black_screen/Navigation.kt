@@ -1,4 +1,4 @@
-package com.example.black_screen
+package com.doruruma.black_screen
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
@@ -8,7 +8,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberNavBackStack
 import androidx.navigation3.ui.NavDisplay
-import com.example.black_screen.ui.home.HomeScreen
+import com.doruruma.black_screen.ui.home.HomeScreen
 
 @Composable
 fun MainNavigation() {

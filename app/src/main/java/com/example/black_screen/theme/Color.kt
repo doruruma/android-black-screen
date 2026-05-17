@@ -1,4 +1,4 @@
-package com.example.black_screen.theme
+package com.doruruma.black_screen.theme
 
 import androidx.compose.ui.graphics.Color
 

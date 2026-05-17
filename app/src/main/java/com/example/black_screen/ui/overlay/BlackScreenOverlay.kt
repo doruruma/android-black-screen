@@ -1,4 +1,4 @@
-package com.example.black_screen.ui.overlay
+package com.doruruma.black_screen.ui.overlay
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState

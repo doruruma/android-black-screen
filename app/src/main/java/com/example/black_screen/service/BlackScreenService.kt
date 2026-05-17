@@ -1,4 +1,4 @@
-package com.example.black_screen.service
+package com.doruruma.black_screen.service
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -23,9 +23,9 @@ import androidx.savedstate.SavedStateRegistry
 import androidx.savedstate.SavedStateRegistryController
 import androidx.savedstate.SavedStateRegistryOwner
 import androidx.savedstate.setViewTreeSavedStateRegistryOwner
-import com.example.black_screen.MainActivity
-import com.example.black_screen.theme.BlackScreenTheme
-import com.example.black_screen.ui.overlay.BlackScreenOverlay
+import com.doruruma.black_screen.MainActivity
+import com.doruruma.black_screen.theme.BlackScreenTheme
+import com.doruruma.black_screen.ui.overlay.BlackScreenOverlay
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
@@ -231,11 +231,11 @@ class BlackScreenService : Service(), LifecycleOwner, SavedStateRegistryOwner {
     companion object {
         private const val NOTIFICATION_ID = 8847
 
-        const val ACTION_START = "com.example.black_screen.action.START"
-        const val ACTION_STOP = "com.example.black_screen.action.STOP"
-        const val ACTION_SHOW_OVERLAY = "com.example.black_screen.action.SHOW_OVERLAY"
-        const val ACTION_HIDE_OVERLAY = "com.example.black_screen.action.HIDE_OVERLAY"
-        const val ACTION_TOGGLE_OVERLAY = "com.example.black_screen.action.TOGGLE_OVERLAY"
+        const val ACTION_START = "com.doruruma.black_screen.action.START"
+        const val ACTION_STOP = "com.doruruma.black_screen.action.STOP"
+        const val ACTION_SHOW_OVERLAY = "com.doruruma.black_screen.action.SHOW_OVERLAY"
+        const val ACTION_HIDE_OVERLAY = "com.doruruma.black_screen.action.HIDE_OVERLAY"
+        const val ACTION_TOGGLE_OVERLAY = "com.doruruma.black_screen.action.TOGGLE_OVERLAY"
 
         private val _isServiceRunning = MutableStateFlow(false)
         val isServiceRunning = _isServiceRunning.asStateFlow()

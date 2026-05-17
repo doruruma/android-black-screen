@@ -1,4 +1,4 @@
-package com.example.black_screen.ui.home
+package com.doruruma.black_screen.ui.home
 
 import android.content.Context
 import android.content.Intent

@@ -1,4 +1,4 @@
-package com.example.black_screen.ui.overlay
+package com.doruruma.black_screen.ui.overlay
 
 import androidx.activity.ComponentActivity
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
