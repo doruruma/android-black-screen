@@ -28,11 +28,17 @@ class BlackScreenOverlayTest {
             )
         }
 
+        // Fast-forward time past the 10ms delay + animation duration
+        composeTestRule.mainClock.advanceTimeBy(50)
+
         // Verify that the time is displayed
         composeTestRule.onNodeWithText(testTime).assertExists()
 
         // Verify that the Hide Overlay button exists and click it
         composeTestRule.onNodeWithText("Hide Overlay").assertExists().performClick()
+
+        // Fast-forward time past the 300ms fade out animation delay
+        composeTestRule.mainClock.advanceTimeBy(500)
 
         // Assert that the dismiss callback was triggered
         assertTrue(dismissClicked)
