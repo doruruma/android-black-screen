@@ -7,13 +7,13 @@ import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
+import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -93,14 +93,15 @@ fun BlackScreenOverlay(
             modifier = modifier
                 .fillMaxSize()
                 .background(Color.Black)
-                .padding(24.dp)
                 .clickable(
                     enabled = true,
+                    indication = null,
+                    interactionSource = remember { MutableInteractionSource() },
                     onClick = {
                         // Reset inactivity countdown & brighten text color
                         countdown = 10
                         textColor = Color.Gray
-                    }
+                    },
                 ),
             contentAlignment = Alignment.Center
         ) {
