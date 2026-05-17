@@ -231,9 +231,16 @@ class BlackScreenService : Service(), LifecycleOwner, SavedStateRegistryOwner {
 
     private fun hideOverlay() {
         if (!_isOverlayShowing.value) return
-        overlayView?.let {
+        overlayView?.let { view ->
+            // Restore system UI (Status Bar & Navigation Bar)
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
+                view.windowInsetsController?.show(WindowInsets.Type.statusBars() or WindowInsets.Type.navigationBars())
+            }
+            @Suppress("DEPRECATION")
+            view.systemUiVisibility = View.SYSTEM_UI_FLAG_VISIBLE
+
             try {
-                windowManager?.removeView(it)
+                windowManager?.removeView(view)
             } catch (e: Exception) {
                 e.printStackTrace()
             }
